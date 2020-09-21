@@ -1,0 +1,157 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Joseph Wheatley - Joseph Wheatley Resume</title>
+
+<meta name="viewport" content="width=device-width"/>
+<meta name="description" content="The Curriculum Vitae of Joe Bloggs."/>
+<meta charset="UTF-8"> 
+
+<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
+<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body id="top">
+<div id="cv" class="instaFade">
+	<div class="mainDetails">
+		<div id="headshot" class="quickFade">
+			<img src="{% static 'images/headshot.jpeg'%}" alt="Joseph Wheatley" />
+		</div>
+		
+		<div id="name">
+			<h1 class="quickFade delayTwo">Joseph Wheatley</h1>
+			<h2 class="quickFade delayThree">Software Developer</h2>
+		</div>
+		
+		<div id="contactDetails" class="quickFade delayFour">
+			<ul>
+				<li>email: <a href="mailto:jwheatley@mail.sfsu.edu.com" target="_blank">jwheatley@mail.sfsu.edu</a></li>
+				<li>LinkedIn: <a href="https://www.linkedin.com/in/joseph-wheatley-23388817b/">joseph-wheatley-23388817b</a></li>
+				<li>Github:<a href="https://github.com/joseph001-wheatley" >joseph001-wheatley</a></li>
+
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="mainArea" class="quickFade delayFive">
+		<section>
+			<article>
+				<div class="sectionTitle">
+					<h1>Objective</h1>
+				</div>
+				
+				<div class="sectionContent">
+					<p>Obtaining an internship or entry level 
+					   opportunity in software engineering</p>
+				</div>
+			</article>
+			<div class="clear"></div>
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Software Engineering Projects</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h2>Full Stack Resume</h2>
+					<p class="subDetails">Django, HTML, CSS </p>
+					<p>
+						Built current resume using Django with Python, CSS, and HTML. Contains links to my Email, GitHub, and LinkedIn. 
+					</p>
+				</article>
+				
+				<article>
+					<h2>Twitter Analyzer Web Application</h2>
+					<p class="subDetails">Django, HTML, CSS, Bootstrap, PostgreSQL, Heroku </p>
+					<p>Currenly develoving a full stack web application using Django with Python. When given an input, the app will analyze the last 200 tweets on twitter of that specific input from the user and show statistics on the positive and negative tweets of the input using twitters API. The metrics on how positive and negative the tweets are based on scored dictionaries. Redis was also used to cache results for 60 seconds. </p>
+				</article>
+				
+				<article>
+					<h2>Personal To-Do Web Application</h2>
+					<p class="subDetails">Django, Jquery, Ubuntu</p>
+					<p>Full stack to-do application made with Django and python. User is able to create a list of tasks and remove what has been done. Used HTML and CSS as well.</p>
+				</article>
+				<article>
+					<h2>Brainshots Sing Mobile App</h2>
+					<p class="subDetails">Unity, FireBase</p>
+					<p>Mobile application built using Unity and C#. When user is given a word, the user is timed to sing a song that contains the word given. I built the authentication through FireBase that enables users to log-in, register, and logout. Currently working on the application for a Canadian game developer.</p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Languages</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<ul class="keySkills">
+					<li>Python</li>
+					<li>Java</li>
+					<li>Javascript</li>
+					<li>C#</li>
+		
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</section>
+
+		<section>
+			<div class="sectionTitle">
+				<h1>Tech Stack</h1>
+			</div>
+
+		<div class="sectionContent">
+				<ul class="keySkills">
+					<li>Django</li>
+					<li>Flask</li>
+					<li>Node.js</li>
+					<li>Ruby on Rails</li>
+					
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		
+		<section>
+			<div class="sectionTitle">
+				<h1>Education</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h2>San Francisco State University</h2>
+					<p class="subDetails">Class of 2022</p>
+					<p>Computer Science B.S.
+				   </p>
+				</article>
+				
+			
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+	</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3753241-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>
